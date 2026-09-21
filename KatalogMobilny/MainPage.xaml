@@ -2,7 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KatalogMobilny.MainPage">
-
+    <VerticalStackLayout Padding="16">
+        <Label Text="Processor" FontSize="12" FontAttributes="Bold"
+               TextColor="#0000FF" HorizontalOptions="Center" Margin="0, 20" />
+        <Image Source="cpu.webp" Margin="150, 20" />
+        <Label Text="Cena: 679,00 zl" TextColor="Gray" />
+        
+        <Label x:Name="EtykietaWyniku" Text="Nic nie wybrano" />
+        <Button Text="Pokaż" Clicked="PokazClicked" />
+    </VerticalStackLayout>
+    <!--
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -32,5 +41,6 @@
                 HorizontalOptions="Fill" BackgroundColor="#FF0000" />
         </VerticalStackLayout>
     </ScrollView>
+    -->
 
 </ContentPage>
