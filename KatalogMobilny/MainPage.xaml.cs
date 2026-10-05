@@ -7,18 +7,24 @@
         public MainPage()
         {
             InitializeComponent();
+            //alternatywne tworzenie elementów interfejsu zamiast
+            //xamla - tego nie robimy!
+            //Label etykieta = new Label();
+            //etykieta.Text = "Procesor";
+            //etykieta.Parent = MainLayout;
         }
 
-        private void PokazClicked(object? sender, EventArgs e)
+        private void PokazClicked(object sender, EventArgs e)
         {
-            EtykietaWyniku.Text = "W";
-
-            //count++;
-
-            //if (count == 1)
-            //    CounterBtn.Text = $"Kliknięto {count} raz";
-            //else
-            //    CounterBtn.Text = $"Kliknięto {count} razy";
+            EtykietaWyniku.Text = "Wybrano procesor";
         }
+
+        /*
+        private void CounterBtn_Clicked(object sender, EventArgs e)
+        {
+            count++;
+            EtykietaPowitania.Text = $"Kliknięto {count} razy";
+        }
+        */
     }
 }
